@@ -4,7 +4,6 @@
 
 <script>
 import { mapGetters } from 'vuex'
-// import { getAllCharacters } from '@/services/characters-service'
 
 export default {
   name: 'home',
