@@ -5,7 +5,6 @@ const actions = {
   setCharacters ({ commit }) {
     getAllCharacters()
       .then(characters => {
-      // actions.setCharacters(characters)
         commit(SET_CHARACTERS, { characters })
       })
   }
