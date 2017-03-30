@@ -3,11 +3,20 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+// import { getAllCharacters } from '@/services/characters-service'
+
 export default {
   name: 'home',
   data () {
     return {
     }
+  },
+  computed: mapGetters({
+    characters: 'allCharacters'
+  }),
+  created () {
+    this.$store.dispatch('setCharacters')
   }
 }
 </script>

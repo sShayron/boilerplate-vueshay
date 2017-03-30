@@ -6,8 +6,10 @@ import store from './store'
 import router from './router'
 import VueBlu from 'vue-blu'
 import 'vue-blu/dist/css/vue-blu.min.css'
+import axios from 'axios'
 
 Vue.use(VueBlu)
+Vue.prototype.$axios = axios
 
 Vue.config.productionTip = false
 

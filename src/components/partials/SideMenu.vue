@@ -1,6 +1,6 @@
 <template>
   <div class="menu is-dark" style="min-height: 100%;">
-    <menus :label="Menu">
+    <menus label="Menu">
       <menu-item icon="user" to="/profile">Perfil</menu-item>
       <menu-item icon="ticket">
         <span>Tag</span>
