@@ -1,9 +1,5 @@
 <template>
-  <b-jumbotron v-bind:header="template"
-    lead="" >
-    <p>{{msg}}</p>
-    <b-btn variant="primary" v-bind:href="github">github</b-btn>
-  </b-jumbotron>
+
 </template>
 <script>
 export default {

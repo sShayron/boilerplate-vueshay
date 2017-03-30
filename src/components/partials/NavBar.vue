@@ -1,36 +1,36 @@
 <template>
-  <b-navbar toggleable type="inverse" class="black-nav" variant="black-nav">
-
-    <b-nav-toggle target="nav_collapse"></b-nav-toggle>
-
-    <b-link class="navbar-brand" to="#">
-      <span class="logo">{{template}}</span>
-    </b-link>
-
-    <b-collapse is-nav id="nav_collapse">
-      
-      <b-nav is-nav-bar>
-        <b-nav-item to="/">Home</b-nav-item>
-        <b-nav-item to="/about">About</b-nav-item>
-      </b-nav>
-
-      <b-nav is-nav-bar class="ml-auto">
-
-        <!-- Navbar dropdowns -->
-        <b-nav-item-dropdown right-alignment>
-
-          <!-- Using text slot -->
-          <template slot="text">
-            <span style="font-weight: bold;">User</span>
-          </template>
-
-          <b-dropdown-item to="#">Profile</b-dropdown-item>
-          <b-dropdown-item to="#">Signout</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-      </b-nav>
-    </b-collapse>
-  </b-navbar>
+  <div class="columns" style="min-height: 100vh; background-color: #f0f0f0;">
+    <div class="column is-3">
+      <div class="menu is-dark" style="min-height: 100%;">
+        <menus label="Menu">
+          <menu-item icon="user">
+            <span>Perfil</span>
+            <menus slot="sub">
+              <menu-item icon="slack">
+                <span>Ops</span>
+                <menus slot="sub">
+                  <menu-item icon="home">Picture</menu-item>
+                  <menu-item icon="home">Content</menu-item>
+                </menus>
+              </menu-item>
+            </menus>
+          </menu-item>
+          <menu-item icon="car">
+            <span>Carros</span>
+            <menus slot="sub" type="float">
+              <menu-item icon="home" style="text-align: left;">Vans</menu-item>
+              <menu-item icon="home" style="text-align: left;">Onibus</menu-item>
+            </menus>
+          </menu-item>
+          <menu-item icon="users">Passageiros</menu-item>
+          <menu-item icon="ticket">Tags</menu-item>
+          <menu-item icon="lock">Privado</menu-item>
+          <div class="divider"></div>
+          <menu-item icon="sign-out">Sair</menu-item>
+        </menus>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
