@@ -1,5 +1,5 @@
 <template>
-
+  <div><h1>BOILERPLATE VUESHAY</h1></div>
 </template>
 
 <script>
