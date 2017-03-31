@@ -1,5 +1,5 @@
-const initialState = {
+const state = {
   list: []
 }
 
-export default initialState
+export default state
