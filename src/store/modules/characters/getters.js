@@ -1,3 +1,3 @@
-const getters = { allCharacters: state => state.characters }
+const getters = { allCharacters: state => state.list }
 
 export default getters
